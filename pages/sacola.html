@@ -1,0 +1,133 @@
+<div class="page" data-name="sacola">
+    <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="if-not-md">Voltar</span>
+                </a>
+            </div>
+            <div class="title">Confirmação do pedido</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="block-title">Resumo do pedido</div>
+        <div class="list no-hairlines-md">
+            <div id="sacola"></div>
+        </div>
+
+        <div class="block-title">Dados do cliente</div>
+        <div class="list no-hairlines-md">
+        <ul>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Forma de pagamento:</div>
+                        <div class="item-input-wrap">
+                            <select name="nome" id="textFormaPagamento">
+                                <option>Cartão de crédito</option>
+                                <option>Cartão de débito</option>
+                                <option>Dinheiro</option>
+                            </select>                                
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Nome:</div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="nome" id="textNome">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">CEP: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="cep" id="textCEP">
+                            <button id="botaoBuscarCEP" onclick="buscarCEP()">Buscar CEP</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Endereço: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="endereco" id="textEndereco">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Numero: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="numero" id="textNumero">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Complemento: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="complemento" id="textComplemento">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Bairro: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="bairro" id="textBairro">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Municipio: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="municipio" id="textMunicipio">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">UF: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="uf" id="textUF">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Telefone: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="telefone" id="textTelefone">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        </div>
+        <button class="col button button-fill open-confirm" onclick="confirmaSacola()">Enviar pedido</button>
+    </div>
+
+ 

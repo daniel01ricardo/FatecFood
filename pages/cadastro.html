@@ -1,0 +1,155 @@
+<div class="page" data-name="cadastro">
+    <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="if-not-md">Voltar</span>
+                </a>
+            </div>
+            <div class="title">Cadastro</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="block-title">Cadastro do Estabelecimento</div>
+        <div class="list no-hairlines-md">
+        <ul>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Nome:</div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="nome" id="textNome">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Foto: -->
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Descrição: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="descricao" id="textDescricao">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">CEP: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="cep" id="textCEP">
+                            <button id="botaoBuscarCEP" onclick="buscarCEP()">Buscar CEP</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Endereço: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="endereco" id="textEndereco">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Numero: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="numero" id="textNumero">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Complemento: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="complemento" id="textComplemento">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Bairro: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="bairro" id="textBairro">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Municipio: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="municipio" id="textMunicipio">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">UF: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="uf" id="textUF">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Telefone: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="telefone" id="textTelefone">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">usuario: </div>
+                        <div class="item-input-wrap">
+                            <input type="text" name="usuario" id="textUsuario">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Senha: </div>
+                        <div class="item-input-wrap">
+                            <input type="password" name="senha" id="textSenha">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Confirme a Senha: </div>
+                        <div class="item-input-wrap">
+                            <input type="password" name="senha2" id="textSenha2">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        </div>
+        <button class="col button button-fill open-confirm" onclick="confirmaCadastro()">Gravar</button>
+    </div>
+
+ 

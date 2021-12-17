@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FATECFood</title>
+  </head>
+  <body>
+    <h1>FATECFood - Cadastro de novo estabelecimento</h1>
+    <form id="formLogin">
+        Nome: <input type="text" name="nome" id="textNome">
+        <!-- Foto: -->
+        Descrição: <input type="text" name="descricao" id="textDescricao">
+        CEP: <input type="text" name="cep" id="textCEP">
+        <button id="botaoBuscarCEP">Buscar CEP</button>
+        Endereço: <input type="text" name="endereco" id="textEndereco">
+        Numero: <input type="text" name="numero" id="textNumero"> 
+        Complemento: <input type="text" name="complemento" id="textComplemento"> 
+        Bairro: <input type="text" name="bairro" id="textBairro"> 
+        Municipio: <input type="text" name="municipio" id="textMunicipio"> 
+        UF: <input type="text" name="uf" id="textUF"> 
+        Telefone: <input type="text" name="telefone" id="textTelefone"> 
+        usuario: <input type="text" name="usuario" id="textUsuario"> 
+        Senha: <input type="password" name="senha" id="textSenha"> 
+        Confirme a Senha: <input type="password" name="senha2" id="textSenha2"> 
+
+        <button id="botaoCadastrar">Cadastrar</button>
+    </form>
+    <a href="index.html">Voltar</a>
+
+    <script src="app.js"></script>
+    <script>
+
+    document.getElementById('botaoCadastrar').addEventListener('click', cadastrar);
+
+    document.getElementById('botaoBuscarCEP').addEventListener('click', buscarCEP);
+
+    </script>
+
+  </body>
+</html>

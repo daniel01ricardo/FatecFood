@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FATECFood</title>
+  </head>
+  <body>
+    <h1>FATECFood</h1>
+    <form id="formLogin">
+        Login: <input type="text" name="usuario" id="textUsuario">
+        Senha: <input type="password" name="senha" id="textSenha">
+        <button id="botaoAcessar">Acessar</button>
+    </form>
+    <a href="cadastro.html">Cadastre-se</a>
+
+    <script src="app.js"></script>
+    <script>
+document.getElementById('botaoAcessar').addEventListener(
+    'click', login);      
+    </script>
+
+  </body>
+</html>

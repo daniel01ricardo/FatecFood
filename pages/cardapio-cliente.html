@@ -1,0 +1,100 @@
+<div class="page" data-name="cardapio-cliente">
+    <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="if-not-md">Voltar</span>
+                </a>
+            </div>
+            <div class="title">Cardápio</div>
+            <div class="right">
+                <a href="#" onclick="MostrarSacola()"><i class="f7-icons">bag_fill</i></a>
+                <a href="#" onclick="ListarCardapio()"><i class="f7-icons">arrow_counterclockwise</i></a>
+                <a href="#" class="popup-open" data-popup="#novo_cardapio"><i class="f7-icons">plus_circle_fill</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="block-title">Cardápio</div>
+
+        <div class="list media-list">
+            <ul id="lista_cardapio">
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="adicionar_item">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="title">Popup</div>
+                        <div class="right">
+                            <a href="#" class="link popup-close">Close</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="block">
+
+                        <h2 id="nome"></h2>
+                        <div id="descricao"></div>
+                        <h1 id="preco" class="title"></h1>
+
+                        <form class="list" id="my-form">
+                            <ul>
+                                <li>
+                                    <div class="item-content item-input">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">Qtd</div>
+                                            <div class="item-input-wrap">
+                                                <input type="hidden" id="id" value="0">
+
+                                                <!-- Stepper element -->
+                                                <div class="stepper stepper-init">
+                                                    <!-- Stepper minus/decrement button -->
+                                                    <div class="stepper-button-minus"></div>
+                                                    <!-- Stepper input -->
+                                                    <div class="stepper-input-wrap">
+                                                        <!-- recommended to make input not editable (readonly) -->
+                                                        <input type="text" readonly min="1" max="50" value="1" id="qtd"
+                                                            name="qtd" />
+                                                    </div>
+                                                    <!-- Stepper plus/increment button -->
+                                                    <div class="stepper-button-plus"></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content item-input">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">Observações</div>
+                                            <div class="item-input-wrap">
+                                                <textarea id="observacoes"
+                                                    placeholder="Observações (ex. tirar cebola)..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                        <div class="block block-strong row">
+                            <div class="col"><a class="button button-fill" onclick="AdicionarItem()"
+                                    href="#">Adicionar Item</a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
